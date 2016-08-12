@@ -1,1 +1,32 @@
 * text=auto !eol
+/AUTHORS -text
+/COPYING -text
+/ChangeLog -text
+/INSTALL -text
+/Makefile -text
+/Makefile.am -text
+/Makefile.in -text
+/NEWS -text
+/README -text
+/aclocal.m4 -text
+/ap_include.am -text
+/apertium-kas.kas.acx -text
+/apertium-kas.kas.dix -text
+/apertium-kas.kas.rlx -text
+/apertium-kas.pc -text
+/apertium-kas.pc.in -text
+/apertium-kas.post-kas.dix -text
+/autogen.sh -text
+autom4te.cache/output.0 -text
+autom4te.cache/output.1 -text
+autom4te.cache/requests -text
+autom4te.cache/traces.0 -text
+autom4te.cache/traces.1 -text
+/config.log -text
+/config.status -text
+/configure -text
+/configure.ac -text
+/install-sh -text
+/kas.prob -text svneol=unset#unset
+/missing -text
+/modes.xml -text

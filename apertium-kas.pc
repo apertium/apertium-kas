@@ -1,0 +1,8 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+srcdir=${prefix}/share/apertium/apertium-kas
+
+Name: apertium-kas
+Description: Finite-state morphological transducer and constraint grammar for Kashmiri 
+Version: 0.1.0
+

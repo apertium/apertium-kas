@@ -1,0 +1,8 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+srcdir=@datarootdir@/apertium/apertium-kas
+
+Name: apertium-kas
+Description: Finite-state morphological transducer and constraint grammar for Kashmiri 
+Version: @VERSION@
+
