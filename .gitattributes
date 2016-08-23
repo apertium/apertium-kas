@@ -3,6 +3,7 @@
 /COPYING -text
 /ChangeLog -text
 /INSTALL -text
+/Makefile.am -text
 /NEWS -text
 /README -text
 /aclocal.m4 -text
