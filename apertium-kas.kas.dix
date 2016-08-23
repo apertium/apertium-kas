@@ -103,43 +103,43 @@
         <e>
             <p>
                 <l>un</l>
-                <r><s n="vblex"/></r>
+                <r>un<s n="vblex"/><s n="inf"/></r>
             </p>
         </e>
         <e>
             <p>
                 <l>ú</l>
-                <r><s n="vblex"/><s n="fut"/><s n="p1"/><s n="sg"/></r>
+                <r>un<s n="vblex"/><s n="fut"/><s n="p1"/><s n="sg"/></r>
             </p>
         </e>
         <e>
             <p>
                 <l>akh</l>
-                <r><s n="vblex"/><s n="fut"/><s n="p2"/><s n="sg"/></r>
+                <r>un<s n="vblex"/><s n="fut"/><s n="p2"/><s n="sg"/></r>
             </p>
         </e>
         <e>
             <p>
                 <l>i</l>
-                <r><s n="vblex"/><s n="fut"/><s n="p3"/><s n="sg"/></r>
+                <r>un<s n="vblex"/><s n="fut"/><s n="p3"/><s n="sg"/></r>
             </p>
         </e>
         <e>
             <p>
                 <l>av</l>
-                <r><s n="vblex"/><s n="fut"/><s n="p1"/><s n="pl"/></r>
+                <r>un<s n="vblex"/><s n="fut"/><s n="p1"/><s n="pl"/></r>
             </p>
         </e>
         <e>
             <p>
                 <l>iv</l>
-                <r><s n="vblex"/><s n="fut"/><s n="p2"/><s n="pl"/></r>
+                <r>un<s n="vblex"/><s n="fut"/><s n="p2"/><s n="pl"/></r>
             </p>
         </e>
         <e>
             <p>
                 <l>an</l>
-                <r><s n="vblex"/><s n="fut"/><s n="p3"/><s n="pl"/></r>
+                <r>un<s n="vblex"/><s n="fut"/><s n="p3"/><s n="pl"/></r>
             </p>
         </e>
     </pardef>
