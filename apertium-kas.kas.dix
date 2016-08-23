@@ -2,7 +2,7 @@
 <dictionary>
 
   <!-- Define the alphabet below. -->
-  <alphabet>aAáÁăảạÆbBcCčdDÐeEéèễệfFgGhHiIíjJkKlLmMnNoOóöớpPqQrRsSšştTŢuUúüưvVwWxXyYzZ</alphabet>
+  <alphabet>AaEeIiOoUuÚúÁáYyWwHhLlRrMmNnVvSsZzŞşÇçBbPpTtDdŦŧĐđCcJjKkGgXxQqFf</alphabet>
 
   <sdefs>
     <!-- Define symbol definitions within <sdef> here. -->
@@ -66,6 +66,7 @@
 
     <sdef n="inf"             c="Infinitive"/>
     <sdef n="pres"            c="Present"/>
+    <sdef n="fut"             c="Future"/>
     <sdef n="imp"             c="Imperative"/>
     <sdef n="pret"            c="Preterite"/>
     <sdef n="pp"              c="Perfect participle"/>
@@ -98,16 +99,60 @@
 
   <pardefs>
     <!-- Define paradigms within <pardef> here. -->
-    <pardef n="house__n">
-      <e><p><l></l><r><s n="n"/><s n="attr"/></r></p></e>
-      <e><p><l></l><r><s n="n"/><s n="sg"/></r></p></e>
-      <e><p><l>s</l><r><s n="n"/><s n="pl"/></r></p></e>
+    <pardef n="kar__v">
+        <e>
+            <p>
+                <l>un</l>
+                <r><s n="vblex"/></r>
+            </p>
+        </e>
+        <e>
+            <p>
+                <l>ú</l>
+                <r><s n="vblex"/><s n="fut"/><s n="p1"/><s n="sg"/></r>
+            </p>
+        </e>
+        <e>
+            <p>
+                <l>akh</l>
+                <r><s n="vblex"/><s n="fut"/><s n="p2"/><s n="sg"/></r>
+            </p>
+        </e>
+        <e>
+            <p>
+                <l>i</l>
+                <r><s n="vblex"/><s n="fut"/><s n="p3"/><s n="sg"/></r>
+            </p>
+        </e>
+        <e>
+            <p>
+                <l>av</l>
+                <r><s n="vblex"/><s n="fut"/><s n="p1"/><s n="pl"/></r>
+            </p>
+        </e>
+        <e>
+            <p>
+                <l>iv</l>
+                <r><s n="vblex"/><s n="fut"/><s n="p2"/><s n="pl"/></r>
+            </p>
+        </e>
+        <e>
+            <p>
+                <l>an</l>
+                <r><s n="vblex"/><s n="fut"/><s n="p3"/><s n="pl"/></r>
+            </p>
+        </e>
     </pardef>
   </pardefs>
 
   <section id="main" type="standard">
     <!-- Define entries within <e> here. -->
-    <e lm="house"><i>house</i><par n="house__n"/></e>
+    <e lm="kar"><i>kar</i><par n="kar__v"/></e>
+    <e lm="par"><i>par</i><par n="kar__v"/></e>
+    <e lm="mar"><i>mar</i><par n="kar__v"/></e>
+    <e lm="tsal"><i>tsal</i><par n="kar__v"/></e>
+    <e lm="ral"><i>ral</i><par n="kar__v"/></e>
+    <e lm="val"><i>val</i><par n="kar__v"/></e>
   </section>
 
   <section id="final" type="inconditional">

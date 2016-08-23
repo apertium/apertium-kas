@@ -171,20 +171,20 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/memduh/Documents/apertium/apertium-kas/missing aclocal-1.15
+ACLOCAL = ${SHELL} /Users/haziqmir/Desktop/apertium/kas/apertium-kas/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-APERTIUM_CFLAGS = -I/usr/include/apertium-3.4 -I/usr/lib/x86_64-linux-gnu/apertium-3.4/include -I/usr/include/lttoolbox-3.3 -I/usr/lib/x86_64-linux-gnu/lttoolbox-3.3/include -I/usr/include/libxml2
-APERTIUM_LIBS = -lapertium3 -llttoolbox3 -lxml2 -lpcre
-AUTOCONF = ${SHELL} /home/memduh/Documents/apertium/apertium-kas/missing autoconf
-AUTOHEADER = ${SHELL} /home/memduh/Documents/apertium/apertium-kas/missing autoheader
-AUTOMAKE = ${SHELL} /home/memduh/Documents/apertium/apertium-kas/missing automake-1.15
+APERTIUM_CFLAGS = -I/usr/local/include/apertium-3.4 -I/usr/local/lib/apertium-3.4/include -I/usr/local/include/lttoolbox-3.3 -I/usr/local/lib/lttoolbox-3.3/include -I/usr/localcross/target/bin/../macports/pkgs/opt/local/include/libxml2 
+APERTIUM_LIBS = -L/usr/local/lib -L/usr/localcross/target/bin/../macports/pkgs/opt/local/lib -lapertium3 -llttoolbox3 -lxml2 
+AUTOCONF = ${SHELL} /Users/haziqmir/Desktop/apertium/kas/apertium-kas/missing autoconf
+AUTOHEADER = ${SHELL} /Users/haziqmir/Desktop/apertium/kas/apertium-kas/missing autoheader
+AUTOMAKE = ${SHELL} /Users/haziqmir/Desktop/apertium/kas/apertium-kas/missing automake-1.15
 AWK = gawk
-CGCOMP = /usr/bin/cg-comp
+CGCOMP = /usr/local/bin/cg-comp
 CYGPATH_W = echo
 DEFS = -DPACKAGE_NAME=\"Apertium\ \{\{languageName1\}\}-\{\{languageName2\}\}\" -DPACKAGE_TARNAME=\"apertium-\{\{languageCode1\}\}-\{\{languageCode2\}\}\" -DPACKAGE_VERSION=\"0.1.0\" -DPACKAGE_STRING=\"Apertium\ \{\{languageName1\}\}-\{\{languageName2\}\}\ 0.1.0\" -DPACKAGE_BUGREPORT=\"memduhg@gmail.com\" -DPACKAGE_URL=\"http://wiki.apertium.org/wiki/Apertium-\{\{languageCode1\}\}-\{\{languageCode2\}\}\" -DPACKAGE=\"apertium-\{\{languageCode1\}\}-\{\{languageCode2\}\}\" -DVERSION=\"0.1.0\"
-ECHO_C = 
-ECHO_N = -n
+ECHO_C = \c
+ECHO_N = 
 ECHO_T = 
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
@@ -195,10 +195,10 @@ LIBOBJS =
 LIBS = 
 LN_S = ln -s
 LTLIBOBJS = 
-LTTOOLBOX_CFLAGS = -I/usr/include/lttoolbox-3.3 -I/usr/lib/x86_64-linux-gnu/lttoolbox-3.3/include -I/usr/include/libxml2
-LTTOOLBOX_LIBS = -llttoolbox3 -lxml2
-MAKEINFO = ${SHELL} /home/memduh/Documents/apertium/apertium-kas/missing makeinfo
-MKDIR_P = /bin/mkdir -p
+LTTOOLBOX_CFLAGS = -I/usr/local/include/lttoolbox-3.3 -I/usr/local/lib/lttoolbox-3.3/include -I/usr/localcross/target/bin/../macports/pkgs/opt/local/include/libxml2 
+LTTOOLBOX_LIBS = -L/usr/local/lib -L/usr/localcross/target/bin/../macports/pkgs/opt/local/lib -llttoolbox3 -lxml2 
+MAKEINFO = ${SHELL} /Users/haziqmir/Desktop/apertium/kas/apertium-kas/missing makeinfo
+MKDIR_P = ./install-sh -c -d
 PACKAGE = apertium-{{languageCode1}}-{{languageCode2}}
 PACKAGE_BUGREPORT = memduhg@gmail.com
 PACKAGE_NAME = Apertium {{languageName1}}-{{languageName2}}
@@ -207,17 +207,17 @@ PACKAGE_TARNAME = apertium-{{languageCode1}}-{{languageCode2}}
 PACKAGE_URL = http://wiki.apertium.org/wiki/Apertium-{{languageCode1}}-{{languageCode2}}
 PACKAGE_VERSION = 0.1.0
 PATH_SEPARATOR = :
-PKG_CONFIG = /usr/bin/pkg-config
+PKG_CONFIG = /usr/local/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
-PKG_CONFIG_PATH = :/usr/local/share/pkgconfig:/usr/local/lib/pkgconfig
+PKG_CONFIG_PATH = 
 SET_MAKE = 
-SHELL = /bin/bash
+SHELL = /bin/sh
 STRIP = 
 VERSION = 0.1.0
-abs_builddir = /home/memduh/Documents/apertium/apertium-kas
-abs_srcdir = /home/memduh/Documents/apertium/apertium-kas
-abs_top_builddir = /home/memduh/Documents/apertium/apertium-kas
-abs_top_srcdir = /home/memduh/Documents/apertium/apertium-kas
+abs_builddir = /Users/haziqmir/Desktop/apertium/kas/apertium-kas
+abs_srcdir = /Users/haziqmir/Desktop/apertium/kas/apertium-kas
+abs_top_builddir = /Users/haziqmir/Desktop/apertium/kas/apertium-kas
+abs_top_srcdir = /Users/haziqmir/Desktop/apertium/kas/apertium-kas
 am__leading_dot = .
 am__tar = $${TAR-tar} chof - "$$tardir"
 am__untar = $${TAR-tar} xf -
@@ -233,7 +233,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/memduh/Documents/apertium/apertium-kas/install-sh
+install_sh = ${SHELL} /Users/haziqmir/Desktop/apertium/kas/apertium-kas/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -245,7 +245,6 @@ pdfdir = ${docdir}
 prefix = /usr/local
 program_transform_name = s,x,x,
 psdir = ${docdir}
-runstatedir = ${localstatedir}/run
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
 srcdir = .
@@ -678,7 +677,7 @@ modes/%.mode: modes.xml
 apertium_modesdir=$(prefix)/share/apertium/modes/
 install-modes:
 	mv modes modes.bak
-	apertium-gen-modes -f modes.xml $(prefix)/share/apertium/$(BASENAME)
+	apertium-gen-modes modes.xml $(BASENAME)
 	rm -rf modes
 	mv modes.bak modes
 	test -d $(DESTDIR)$(apertium_modesdir) || mkdir $(DESTDIR)$(apertium_modesdir)
