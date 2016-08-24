@@ -2,13 +2,13 @@
 <dictionary>
 
   <!-- Define the alphabet below. -->
-  <alphabet>AaEeIiOoUuÚúÁáYyWwHhLlRrMmNnVvSsZzŞşÇçBbPpTtDdŦŧĐđCcJjKkGgXxQqFf</alphabet>
+  <alphabet>AaEeIiOoUuÚúÁáYyWwHhLlRrMmNnVvSsZzŞşÇçBbPpTtDdŦŧĐđCcJjKkGgXxQqFfь</alphabet>
 
   <sdefs>
     <!-- Define symbol definitions within <sdef> here. -->
     <sdef n="n"               c="Noun"/>
-    <sdef n="np"              c="Proper noun"/>
     <sdef n="vblex"           c="Verb, lexical"/>
+    <sdef n="np"              c="Proper noun"/>
     <sdef n="vbmod"           c="Modal verb"/>
     <sdef n="vaux"            c="Auxiliary verb"/>
     <sdef n="vbser"           c="'To be' verb"/>
@@ -67,6 +67,7 @@
     <sdef n="inf"             c="Infinitive"/>
     <sdef n="fut"             c="Future"/>
     <sdef n="pres"            c="Present"/>
+    <sdef n="past"            c="Past"/>
     <sdef n="imp"             c="Imperative"/>
     <sdef n="pret"            c="Preterite"/>
     <sdef n="pp"              c="Perfective participle"/>
@@ -99,82 +100,97 @@
   </sdefs>
 
   <pardefs>
-    <!-- Define paradigms within <pardef> here. -->
+    <!-- Copula -->
+    <pardef n="/aasun__vbcop">
+        <e><p><l>aasun</l>  <r>aasun<s n="vbser"/><s n="inf"/></r></p></e>
+        <!-- Present Tense -->
+        <e><p><l>chus</l>   <r>aasun<s n="vbser"/><s n="pres"/><s n="p1"/><s n="sg"/><s n="m"/></r></p></e>
+        <e><p><l>chas</l>   <r>aasun<s n="vbser"/><s n="pres"/><s n="p1"/><s n="sg"/><s n="f"/></r></p></e>
+        <e><p><l>chukh</l>  <r>aasun<s n="vbser"/><s n="pres"/><s n="p2"/><s n="sg"/><s n="m"/></r></p></e>
+        <e><p><l>chakh</l>  <r>aasun<s n="vbser"/><s n="pres"/><s n="p2"/><s n="sg"/><s n="f"/></r></p></e>
+        <e><p><l>chu</l>    <r>aasun<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/><s n="m"/></r></p></e>
+        <e><p><l>cha</l>    <r>aasun<s n="vbser"/><s n="pres"/><s n="p3"/><s n="sg"/><s n="f"/></r></p></e>
+        <e><p><l>chi</l>    <r>aasun<s n="vbser"/><s n="pres"/><s n="p1"/><s n="pl"/><s n="m"/></r></p></e>
+        <e><p><l>cha</l>    <r>aasun<s n="vbser"/><s n="pres"/><s n="p1"/><s n="pl"/><s n="f"/></r></p></e>
+        <e><p><l>chivú</l>  <r>aasun<s n="vbser"/><s n="pres"/><s n="p2"/><s n="pl"/><s n="m"/></r></p></e><!---->
+        <e><p><l>chavú</l>  <r>aasun<s n="vbser"/><s n="pres"/><s n="p2"/><s n="pl"/><s n="f"/></r></p></e><!---->
+        <e><p><l>chi</l>    <r>aasun<s n="vbser"/><s n="pres"/><s n="p3"/><s n="pl"/><s n="m"/></r></p></e>
+        <e><p><l>cha</l>    <r>aasun<s n="vbser"/><s n="pres"/><s n="p3"/><s n="pl"/><s n="f"/></r></p></e>
+
+        <!-- Past Tense -->
+        <e><p><l>uosus</l>   <r>aasun<s n="vbser"/><s n="past"/><s n="p1"/><s n="sg"/><s n="m"/></r></p></e>
+        <e><p><l>aesús</l>   <r>aasun<s n="vbser"/><s n="past"/><s n="p1"/><s n="sg"/><s n="f"/></r></p></e>
+        <e><p><l>úosukh</l>  <r>aasun<s n="vbser"/><s n="past"/><s n="p2"/><s n="sg"/><s n="m"/></r></p></e>
+        <e><p><l>aesúkh</l>  <r>aasun<s n="vbser"/><s n="past"/><s n="p2"/><s n="sg"/><s n="f"/></r></p></e>
+        <e><p><l>uos</l>    <r>aasun<s n="vbser"/><s n="past"/><s n="p3"/><s n="sg"/><s n="m"/></r></p></e>
+        <e><p><l>aes</l>    <r>aasun<s n="vbser"/><s n="past"/><s n="p3"/><s n="sg"/><s n="f"/></r></p></e>
+        <e><p><l>aesь</l>    <r>aasun<s n="vbser"/><s n="past"/><s n="p1"/><s n="pl"/><s n="m"/></r></p></e>
+        <e><p><l>aasú</l>    <r>aasun<s n="vbser"/><s n="past"/><s n="p1"/><s n="pl"/><s n="f"/></r></p></e>
+        <e><p><l>aesivú</l>  <r>aasun<s n="vbser"/><s n="past"/><s n="p2"/><s n="pl"/><s n="m"/></r></p></e><!---->
+        <e><p><l>aasúvú</l>  <r>aasun<s n="vbser"/><s n="past"/><s n="p2"/><s n="pl"/><s n="f"/></r></p></e><!---->
+        <e><p><l>aesь</l>    <r>aasun<s n="vbser"/><s n="past"/><s n="p3"/><s n="pl"/><s n="m"/></r></p></e>
+        <e><p><l>aasú</l>    <r>aasun<s n="vbser"/><s n="past"/><s n="p3"/><s n="pl"/><s n="f"/></r></p></e>
+
+        <!-- Future Tense -->
+        <e><p><l>aasú</l>   <r>aasun<s n="vbser"/><s n="fut"/><s n="p1"/><s n="sg"/><s n="un"/></r></p></e>
+        <e><p><l>aasakh</l>  <r>aasun<s n="vbser"/><s n="fut"/><s n="p2"/><s n="sg"/><s n="un"/></r></p></e>
+        <e><p><l>aasi</l>    <r>aasun<s n="vbser"/><s n="fut"/><s n="p3"/><s n="sg"/><s n="un"/></r></p></e>
+        <e><p><l>aasav</l>    <r>aasun<s n="vbser"/><s n="fut"/><s n="p1"/><s n="pl"/><s n="un"/></r></p></e>
+        <e><p><l>aesiv</l>  <r>aasun<s n="vbser"/><s n="fut"/><s n="p2"/><s n="pl"/><s n="m"/></r></p></e><!---->
+        <e><p><l>aesivú</l>  <r>aasun<s n="vbser"/><s n="fut"/><s n="p2"/><s n="pl"/><s n="f"/></r></p></e><!---->
+        <e><p><l>aasan</l>    <r>aasun<s n="vbser"/><s n="fut"/><s n="p3"/><s n="pl"/><s n="un"/></r></p></e>
+
+
+    </pardef>
+    <!-- -arun verbs -->
     <pardef n="k/arun__v">
-        <e>
-            <p>
-                <l>arun</l>
-                <r>arun<s n="vblex"/><s n="inf"/></r>
-            </p>
-        </e>
-        <e>
-            <p>
-                <l>ormut</l>
-                <r>arun<s n="vblex"/><s n="pp"/></r>
-            </p>
-        </e>
-        <e>
-            <p>
-                <l>araan</l>
-                <r>arun<s n="vblex"/><s n="impf"/></r>
-            </p>
-        </e>
-        <e>
-            <p>
-                <l>árith</l>
-                <r>arun<s n="vblex"/><s n="conj"/></r>
-            </p>
-        </e>
-        <e>
-            <p>
-                <l>arú</l>
-                <r>arun<s n="vblex"/><s n="fut"/><s n="p1"/><s n="sg"/></r>
-            </p>
-        </e>
-        <e>
-            <p>
-                <l>arakh</l>
-                <r>arun<s n="vblex"/><s n="fut"/><s n="p2"/><s n="sg"/></r>
-            </p>
-        </e>
-        <e>
-            <p>
-                <l>ari</l>
-                <r>arun<s n="vblex"/><s n="fut"/><s n="p3"/><s n="sg"/></r>
-            </p>
-        </e>
-        <e>
-            <p>
-                <l>arav</l>
-                <r>arun<s n="vblex"/><s n="fut"/><s n="p1"/><s n="pl"/></r>
-            </p>
-        </e>
-        <e>
-            <p>
-                <l>áriv</l>
-                <r>arun<s n="vblex"/><s n="fut"/><s n="p2"/><s n="pl"/></r>
-            </p>
-        </e>
-        <e>
-            <p>
-                <l>aran</l>
-                <r>arun<s n="vblex"/><s n="fut"/><s n="p3"/><s n="pl"/></r>
-            </p>
-        </e>
+        <e><p><l>arun</l>   <r>arun<s n="vblex"/><s n="inf"/>                           </r></p></e>
+        <e><p><l>ormut</l>  <r>arun<s n="vblex"/><s n="pp"/><s n="m"/>                  </r></p></e>
+        <e><p><l>ármúts</l> <r>arun<s n="vblex"/><s n="pp"/><s n="f"/>                  </r></p></e>
+        <e><p><l>araan</l>  <r>arun<s n="vblex"/><s n="impf"/>                          </r></p></e>
+        <e><p><l>árith</l>  <r>arun<s n="vblex"/><s n="conj"/>                          </r></p></e>
+        <e><p><l>arú</l>    <r>arun<s n="vblex"/><s n="fut"/><s n="p1"/><s n="sg"/>     </r></p></e>
+        <e><p><l>arakh</l>  <r>arun<s n="vblex"/><s n="fut"/><s n="p2"/><s n="sg"/>     </r></p></e>
+        <e><p><l>ari</l>    <r>arun<s n="vblex"/><s n="fut"/><s n="p3"/><s n="sg"/>     </r></p></e>
+        <e><p><l>arav</l>   <r>arun<s n="vblex"/><s n="fut"/><s n="p1"/><s n="pl"/>     </r></p></e>
+        <e><p><l>áriv</l>   <r>arun<s n="vblex"/><s n="fut"/><s n="p2"/><s n="pl"/>     </r></p></e>
+        <e><p><l>aran</l>   <r>arun<s n="vblex"/><s n="fut"/><s n="p3"/><s n="pl"/>     </r></p></e>
     </pardef>
   </pardefs>
 
   <section id="main" type="standard">
-    <!-- Define entries within <e> here. -->
+    <!-- -arun verbs -->
     <e lm="p"><i>p</i><par n="k/arun__v"/></e>
     <e lm="ph"><i>ph</i><par n="k/arun__v"/></e>
-    <e lm="b"><i>b</i><par n="k/arun__v"/></e>
     <e lm="k"><i>k</i><par n="k/arun__v"/></e>
     <e lm="kh"><i>kh</i><par n="k/arun__v"/></e>
     <e lm="g"><i>g</i><par n="k/arun__v"/></e>
     <e lm="t"><i>t</i><par n="k/arun__v"/></e>
+
+
+    <e lm="aasun"><i></i><par n="/aasun__vbcop"/></e>
+
+    <!--
+    <e lm="b"><i>b</i><par n="k/arun__v"/></e>
     <e lm="d"><i>d</i><par n="k/arun__v"/></e>
     <e lm="m"><i>m</i><par n="k/arun__v"/></e>
+    -->
+
+    <!--
+    -anun verbs
+    <e lm="v"><i>v</i><par n="v/anun__v"/></e>
+    <e lm="b"><i>b</i><par n="v/anun__v"/></e>
+    <e lm="r"><i>r</i><par n="v/anun__v"/></e>
+    <e lm="kh"><i>kh</i><par n="v/anun__v"/></e>
+    <e lm="s"><i>s</i><par n="v/anun__v"/></e>
+
+     -amun verbs
+    <e lm="l"><i>l</i><par n="l/amun__v"/></e>
+    <e lm="ts"><i>ts</i><par n="l/amun__v"/></e>
+    <e lm="n"><i>n</i><par n="l/amun__v"/></e>
+    <e lm="s"><i>s</i><par n="l/amun__v"/></e>
+    <e lm="th"><i>th</i><par n="l/amun__v"/></e>
+    -->
   </section>
 
   <section id="final" type="inconditional">
