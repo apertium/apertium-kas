@@ -160,12 +160,13 @@
 
   <section id="main" type="standard">
     <!-- -arun verbs -->
-    <e lm="p"><i>p</i><par n="k/arun__v"/></e>
-    <e lm="ph"><i>ph</i><par n="k/arun__v"/></e>
-    <e lm="k"><i>k</i><par n="k/arun__v"/></e>
-    <e lm="kh"><i>kh</i><par n="k/arun__v"/></e>
-    <e lm="g"><i>g</i><par n="k/arun__v"/></e>
-    <e lm="t"><i>t</i><par n="k/arun__v"/></e>
+    <e lm="parun"><i>p</i><par n="k/arun__v"/></e>
+    <e lm="pharun"><i>ph</i><par n="k/arun__v"/></e>
+    <e lm="karun"><i>k</i><par n="k/arun__v"/></e>
+    <e lm="tsoor karun"><i>tsoor<b/>k</i><par n="k/arun__v"/></e>
+    <e lm="kharun"><i>kh</i><par n="k/arun__v"/></e>
+    <e lm="garun"><i>g</i><par n="k/arun__v"/></e>
+    <e lm="tarun"><i>t</i><par n="k/arun__v"/></e>
 
 
     <e lm="aasun"><i></i><par n="/aasun__vbcop"/></e>
