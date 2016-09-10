@@ -170,14 +170,14 @@
     </pardef>
     <!-- gupun -->
     <pardef n="gup/un__n">
-        <e><p><l>un</l> <r><s n="n"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
-        <e><p><l>an</l> <r><s n="n"/><s n="m"/><s n="pl"/><s n="nom"/></r></p></e>
-        <e><p><l>nan</l> <r><s n="n"/><s n="m"/><s n="sg"/><s n="erg"/></r></p></e>
-        <e><p><l>nav</l> <r><s n="n"/><s n="m"/><s n="pl"/><s n="erg"/></r></p></e>
-        <e><p><l>nas</l> <r><s n="n"/><s n="m"/><s n="sg"/><s n="dat"/></r></p></e>
-        <e><p><l>nan</l> <r><s n="n"/><s n="m"/><s n="pl"/><s n="dat"/></r></p></e>
-        <e><p><l>nú</l> <r><s n="n"/><s n="m"/><s n="sg"/><s n="abl"/></r></p></e>
-        <e><p><l>nav</l> <r><s n="n"/><s n="m"/><s n="pl"/><s n="abl"/></r></p></e>
+        <e><p><l>un</l> <r>un<s n="n"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
+        <e><p><l>an</l> <r>un<s n="n"/><s n="m"/><s n="pl"/><s n="nom"/></r></p></e>
+        <e><p><l>nan</l> <r>un<s n="n"/><s n="m"/><s n="sg"/><s n="erg"/></r></p></e>
+        <e><p><l>nav</l> <r>un<s n="n"/><s n="m"/><s n="pl"/><s n="erg"/></r></p></e>
+        <e><p><l>nas</l> <r>un<s n="n"/><s n="m"/><s n="sg"/><s n="dat"/></r></p></e>
+        <e><p><l>nan</l> <r>un<s n="n"/><s n="m"/><s n="pl"/><s n="dat"/></r></p></e>
+        <e><p><l>nú</l> <r>un<s n="n"/><s n="m"/><s n="sg"/><s n="abl"/></r></p></e>
+        <e><p><l>nav</l> <r>un<s n="n"/><s n="m"/><s n="pl"/><s n="abl"/></r></p></e>
     </pardef>
     <!-- kitaab -->
     <pardef n="kitaab__n">
@@ -293,6 +293,29 @@
         <e><p><l>ár</l>    <r>arun<s n="vblex"/><s n="past"/><s n="p3"/><s n="pl"/><s n="f"/></r></p></e>
         -->
     </pardef>
+
+	<pardef n="kor/mut__vblex">
+        <e><p><l>mut</l><r>un<s n="vblex"/><s n="pp"/><s n="m"/></r></p></e>
+	</pardef>
+
+	<pardef n="kár/muts__vblex">
+        <e><p><l>múts</l><r>un<s n="vblex"/><s n="pp"/><s n="f"/></r></p></e>
+	</pardef>
+
+	<pardef n="kar/un__vblex">
+        <e><p><l>un</l><r>un<s n="vblex"/><s n="inf"/></r></p></e>
+	</pardef>
+
+
+	<!-- SECTION: Mutations -->
+
+	<pardef n="k/arun__mutation">
+	<!-- Mutation: ar -> ár,or -->
+        <e><p><l>ar</l><r>ar</r></p><par n="kar/un__vblex"/></e>
+        <e><p><l>ár</l><r>ar</r></p><par n="kár/muts__vblex"/></e>
+        <e><p><l>or</l><r>ar</r></p><par n="kor/mut__vblex"/></e>
+	</pardef>
+
   </pardefs>
 
   <section id="main" type="standard">
@@ -308,7 +331,7 @@
     <!-- hoŧ háŧь -->
     <e lm="h"><i>h</i><par n="h/oŧ__n"/></e>
     <e lm="l"><i>l</i><par n="h/oŧ__n"/></e>
-    <e lm="k"><i>k</i><par n="m/uol__n"/></e>
+    <e lm="kuol"><i>k</i><par n="m/uol__n"/></e>
     <!-- bar -->
     <e lm="bar"><i>bar</i><par n="bar__n"/></e>
     <e lm="vaal"><i>vaal</i><par n="bar__n"/></e>
@@ -343,7 +366,7 @@
     <!-- -arun verbs -->
     <e lm="parun"><i>p</i><par n="k/arun__v"/></e>
     <e lm="pharun"><i>ph</i><par n="k/arun__v"/></e>
-    <e lm="karun"><i>k</i><par n="k/arun__v"/></e>
+    <e lm="karun"><i>k</i><par n="k/arun__mutation"/></e>
     <e lm="kharun"><i>kh</i><par n="k/arun__v"/></e>
     <e lm="garun"><i>g</i><par n="k/arun__v"/></e>
     <e lm="tarun"><i>t</i><par n="k/arun__v"/></e>

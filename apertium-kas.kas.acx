@@ -1,5 +1,12 @@
 <?xml version="1.0"?>
 <analysis-chars>
   <!-- Describe equivalent characters in monodices here. See http://wiki.apertium.org/wiki/Acx for more information. -->
+  <!-- Sometimes diacritics are not written -->
+  <char value="á">
+    <equiv-char value="a"/>
+  </char>
+  <char value="ú">
+    <equiv-char value="u"/>
+  </char>
 </analysis-chars>
 
