@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium {{languageName1}}-{{languageName2}}], [0.1.0], [memduhg@gmail.com], [apertium-{{languageCode1}}-{{languageCode2}}], [http://wiki.apertium.org/wiki/Apertium-{{languageCode1}}-{{languageCode2}}])
+AC_INIT([Apertium {{languageName1}}-{{languageName2}}], [0.1.0], [memduhg@gmail.com], [apertium-{{languageCode1}}-{{languageCode2}}], [https://wiki.apertium.org/wiki/Apertium-{{languageCode1}}-{{languageCode2}}])
 AM_INIT_AUTOMAKE
 
 AC_PROG_LN_S

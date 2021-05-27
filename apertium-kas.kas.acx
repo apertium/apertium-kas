@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <analysis-chars>
-  <!-- Describe equivalent characters in monodices here. See http://wiki.apertium.org/wiki/Acx for more information. -->
+  <!-- Describe equivalent characters in monodices here. See https://wiki.apertium.org/wiki/Acx for more information. -->
   <!-- Sometimes diacritics are not written -->
   <char value="á">
     <equiv-char value="a"/>
