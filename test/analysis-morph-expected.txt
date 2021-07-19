@@ -1,0 +1,18 @@
+[-j5rrHDK4Qjm#0] ^gáriv/garun<vblex><fut><p2><pl>     $
+[/-j5rrHDK4Qjm]
+[2pc5KQP6P9BJ#0] ^muol/m<n><m><sg><nom>$
+[/2pc5KQP6P9BJ]
+[NCFBkOjA1GBZ#0] ^¿/¿<sent>$
+[/NCFBkOjA1GBZ]
+[QbgF6nrAFOI1#0] ^;/;<sent>$
+[/QbgF6nrAFOI1]
+[RjRKL7TtAp62#0] ^úosukh/âsun<vbser><past><p2><sg><m>$
+[/RjRKL7TtAp62]
+[afnwBSe9S_O_#0] ^uosukh/âsun<vbser><past><p2><sg><m>$
+[/afnwBSe9S_O_]
+[f4brjK7boOJN#0] ^vaalas/vaal<n><m><sg><dat>$
+[/f4brjK7boOJN]
+[io3oI9XtPhJ0#0] ^?/?<sent>$
+[/io3oI9XtPhJ0]
+[zbTuKuppzGqD#0] ^./.<sent>$
+[/zbTuKuppzGqD]
